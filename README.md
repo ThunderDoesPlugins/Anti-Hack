@@ -1,2 +1,2 @@
 # Ender Prizm
-An upcoming fully fratured anti hack plugin
+An upcoming fully featured anti hack plugin
