@@ -1,0 +1,27 @@
+name: EnderPrizm(Alpha)
+main: Thunder33345\EnderPrizm\Main
+version: 0.0.1
+load: POSTWORLD
+author: Thunder33345
+prefix: ""
+api: ["1.0.0","2.0.0"]
+
+commands:
+  enderprizm:
+    description: anitcheat main command
+    aliases: ["ep","e"]
+permissions:
+  enderprizm:
+    default: false
+    description: "EnderPrizm"
+    children:
+      enderprizm.bypass:
+        default: false
+        description: "Allows to bypass all Ender Prizm checks."
+        children:
+         enderprizm.bypass.fly:
+          default: false
+          description: "Allows to bypass Ender Prizm fly checks."
+      enderprizm.admin:
+        default: false
+        description: "Allows to manage Ender Prizm."

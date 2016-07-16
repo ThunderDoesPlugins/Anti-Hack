@@ -1,0 +1,11 @@
+---
+# EnderPrizm Config
+# Log all events
+Log: true
+# Enable debug
+Debug: true
+# Enable Anti Fly
+AntiFly: true
+# Enable anti speed
+AntiSpeed: true
+...

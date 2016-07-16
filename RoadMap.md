@@ -1,0 +1,12 @@
+- [X] Anti Fly
+- [X] fix confusing config issue (spelled resources wrongly)
+- [X] anti speed
+- [ ] anti force game mode
+- [ ] anti op
+- [] anti opped
+- [] anti speed
+- [] anti 1 hit kill
+- [] anti god mode
+- []
+- []
+- []
