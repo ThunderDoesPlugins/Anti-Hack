@@ -4,4 +4,6 @@
 Log: true
 # Enable debug
 Debug: true
+# Enable Anti Force OP
+Force-op: true
 ...

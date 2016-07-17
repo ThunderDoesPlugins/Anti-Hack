@@ -5,6 +5,7 @@ use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
 use Thunder33345\EnderPrizm\Listeners;
+use Thunder33345\EnderPrizm\Modules\ForceOPTask;
 
 class Loader extends PluginBase implements Listener
 {
@@ -26,15 +27,18 @@ class Loader extends PluginBase implements Listener
 			if (!is_dir($this->getDataFolder() . "/log/")) {
 				mkdir($this->getDataFolder() . "/log/", 0777, true);
 			}
-			$this->getLogger()->info(TextFormat::GREEN . 'Logger enabled!');
+			$this->getLogger()->info('Logger enabled!');
 		}
-
-		$this->getLogger()->info(TextFormat::GREEN . "Ender Prizm by Thunder33345 Loaded!");
+		if ($this->yml['Force-op']){
+			$this->getLogger()->info('Enabling Anti Force OP Module...');
+			$this->getServer()->getScheduler()->scheduleRepeatingTask(new ForceOPTask($this),100);
+		}
+		$this->getLogger()->info("Ender Prizm by Thunder33345 Loaded!");
 	}
 
 	public function onDisable()
 	{
-		$this->getLogger()->info(TextFormat::GREEN . "Ender Prizm by Thunder33345 Unloaded!");
+		$this->getLogger()->info("Ender Prizm by Thunder33345 Unloaded!");
 	}
 
 	public function logToFile($name, $text)

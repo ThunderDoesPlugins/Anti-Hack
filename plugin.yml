@@ -1,9 +1,9 @@
 name: EnderPrizm(Alpha)
-main: Thunder33345\EnderPrizm\Main
+main: Thunder33345\EnderPrizm\Loader
 version: 0.0.1
 load: POSTWORLD
 author: Thunder33345
-prefix: ""
+prefix: "EnderPrizm"
 api: ["1.0.0","2.0.0"]
 
 commands:
