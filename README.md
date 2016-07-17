@@ -1,3 +1,6 @@
-# Ender Prizm (Info Branch)
-Info Branch is WIP
-More info will be added please check back latter!
+Ender Prizm Info
+------
+#### Welcome to Ender Prizm Info Branch
+#### Current Stage: Beta
+#### Passed: Alpha
+What that means: nothing other then just a new re write
