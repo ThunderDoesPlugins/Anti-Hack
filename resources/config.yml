@@ -6,4 +6,7 @@ Log: true
 Debug: true
 # Enable Anti Force OP
 Force-op: true
+# Anti Reach
+Anti-reach: true
+Max-reach: "8"
 ...
