@@ -1,0 +1,7 @@
+---
+# EnderPrizm Config
+# Log all events
+Log: true
+# Enable debug
+Debug: true
+...

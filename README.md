@@ -3,8 +3,7 @@ An upcoming fully featured advance anti hack plugin
 
 ### Features: (More Will Be Added After Time
 None
-### To Do:
-#### Suggestions Are Welcomed
+### To Do: (Suggestions Are Welcomed)
 Anti Fly</br>
 Anti Speed</br>
 Anti Force Game Mode</br>
