@@ -5,7 +5,7 @@ An upcoming fully featured advance anti hack plugin
 - Anti Unauthorised / Force OP</br>
 
 ### WIP Features
-- [None]</br>
+- [ ] Anti Reach</br>
 
 ### List Of Suggestions : (Suggestions Are Welcomed)
 - [ ] Anti Fly</br>
@@ -16,4 +16,3 @@ An upcoming fully featured advance anti hack plugin
 - [ ] Anti X-Ray</br>
 - [ ] Anti No Clip</br>
 - [ ] Logging Feature</br>
-- [ ] Anti Reach
