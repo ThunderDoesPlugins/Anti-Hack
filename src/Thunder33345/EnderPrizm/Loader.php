@@ -3,8 +3,8 @@ namespace Thunder33345\EnderPrizm;
 
 use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase;
-use pocketmine\utils\TextFormat;
 use Thunder33345\EnderPrizm\Listeners;
+use Thunder33345\EnderPrizm\Modules\AntiReach;
 use Thunder33345\EnderPrizm\Modules\ForceOPTask;
 
 class Loader extends PluginBase implements Listener
@@ -29,9 +29,13 @@ class Loader extends PluginBase implements Listener
 			}
 			$this->getLogger()->info('Logger enabled!');
 		}
-		if ($this->yml['Force-op']){
+		if ($this->yml['Force-op']) {
 			$this->getLogger()->info('Enabling Anti Force OP Module...');
-			$this->getServer()->getScheduler()->scheduleRepeatingTask(new ForceOPTask($this),100);
+			$this->getServer()->getScheduler()->scheduleRepeatingTask(new ForceOPTask($this), 100);
+		}
+		if ($this->yml['Anti-reach']) {
+			$this->getLogger()->info('Enabling Anti Reach... Range set at:"' . $this->yml['Max-reach'] . '"');
+			$this->getServer()->getPluginManager()->registerEvents(new AntiReach($this), $this);
 		}
 		$this->getLogger()->info("Ender Prizm by Thunder33345 Loaded!");
 	}

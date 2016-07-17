@@ -8,5 +8,5 @@ Debug: true
 Force-op: true
 # Anti Reach
 Anti-reach: true
-reach-range: "6.5"
+Max-reach: "8"
 ...
