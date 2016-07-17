@@ -5,13 +5,13 @@ An upcoming fully featured advance anti hack plugin
 None
 ### To Do:
 #### Suggestions Are Welcomed
-Anti Fly__
-Anti Speed__
-Anti Force Game Mode__
-Anti Force OP__
-Anti 1 hit kill__
-Anti God Mode__
-Anti X-Ray__
-Anti No Clip__
-Logging Feature__
+Anti Fly</br>
+Anti Speed</br>
+Anti Force Game Mode</br>
+Anti Force OP</br>
+Anti 1 hit kill</br>
+Anti God Mode</br>
+Anti X-Ray</br>
+Anti No Clip</br>
+Logging Feature</br>
 Anti Reach
