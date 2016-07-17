@@ -5,6 +5,7 @@ use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
 use Thunder33345\EnderPrizm\Listeners;
+
 class Loader extends PluginBase implements Listener
 {
 	private $yml, $prefix = "[EnderPrizm]";
@@ -35,6 +36,7 @@ class Loader extends PluginBase implements Listener
 	{
 		$this->getLogger()->info(TextFormat::GREEN . "Ender Prizm by Thunder33345 Unloaded!");
 	}
+
 	public function logToFile($name, $text)
 	{
 		if ($this->yml["Log"]) {
@@ -45,10 +47,14 @@ class Loader extends PluginBase implements Listener
 			fclose($fh);
 		}
 	}
-	public function getYml(){
+
+	public function getYml()
+	{
 		return $this->yml;
 	}
-	public function getPrefix(){
+
+	public function getPrefix()
+	{
 		return $this->prefix;
 	}
 }

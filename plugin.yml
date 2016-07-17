@@ -19,9 +19,9 @@ permissions:
         default: false
         description: "Allows to bypass all Ender Prizm checks."
         children:
-         enderprizm.bypass.(PlaceHolder):
+         enderprizm.bypass.op:
           default: false
-          description: "Allows to bypass Ender Prizm (Place Holder) checks."
+          description: "Allows to bypass Ender Prizm op checks."
       enderprizm.manage:
         default: false
         description: "Allows to manage Ender Prizm."

@@ -8,6 +8,7 @@ use pocketmine\event\Listener;
 use pocketmine\Player;
 use pocketmine\utils\TextFormat;
 use Thunder33345\EnderPrizm;
+
 class CommandListener implements Listener
 {
 	private $loader, $yml, $prefix;
@@ -19,13 +20,14 @@ class CommandListener implements Listener
 		$this->prefix = $loader->getPrefix();
 	}
 
-	public function onCommand(CommandSender $sender, Command $command, $label, array $args)
+	public function onCommand(CommandSender $sender, Command $command, array $args)
 	{
+
 		switch (strtolower($command->getName())) {
 			case "enderprizm":
 			case "ep":
 			case "e":
-				if ($sender instanceof player) {
+				if ($sender instanceof Player) {
 					if (!$sender->hasPermission('enderprizm.manage')) {
 						$sender->sendMessage(TextFormat::GREEN . $this->prefix . " Ender Prizm Made by " . TextFormat::BOLD . "Thunder33345");
 						return true;
@@ -45,7 +47,7 @@ class CommandListener implements Listener
 						$sender->sendMessage(TextFormat::GREEN . $this->prefix . " Ender Prizm (Beta) Made by " . TextFormat::BOLD . "Thunder33345");
 						break;
 					default:
-						$sender->sendMessage('Use Help for more info');
+						$sender->sendMessage('Use Help for more info');//
 						break;
 				}
 				break;
